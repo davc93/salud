@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Link, Outlet } from 'react-router-dom'
-
+import { BlogData } from '../models/blogdata'
 import { blogdata } from '../data/blogdata'
 export const Blog = () => {
   return (
@@ -16,7 +16,8 @@ export const Blog = () => {
   )
 }
 
-function BlogLink({ post }) {
+
+function BlogLink({post}:any) {
 
 
   return (

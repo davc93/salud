@@ -1,5 +1,6 @@
-export const blogdata = [
+import { BlogData } from "../models/blogdata";
 
+export const blogdata: BlogData[] = [
 
 ];
 blogdata.push({

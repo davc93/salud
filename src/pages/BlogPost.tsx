@@ -16,9 +16,9 @@ export const BlogPost = () => {
   return (
 
     <React.Fragment>
-        <h1>{blogpost.title}</h1>
-        <p>{blogpost.author}</p>
-        <p>{blogpost.content}</p>
+        <h1>{blogpost?.title}</h1>
+        <p>{blogpost?.author}</p>
+        <p>{blogpost?.content}</p>
 
         <button onClick={returnToBlog}>Volver al blog</button>
     </React.Fragment>
