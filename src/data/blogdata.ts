@@ -1,28 +1,34 @@
-import { BlogData } from "../models/blogdata";
+import { Professional } from "../models/blogdata";
 
-export const blogdata: BlogData[] = [
+export const professionalData: Professional[] = [
 
 ];
-blogdata.push({
-  title: 'que es react',
-  slug: 'que-es-react',
-  content: 'react es el mejor framework',
-  author: "Diego"
+
+professionalData.push({
+  name:'Olga',
+  description:'soy una gran profesional',
+  profilePicture:'https;//google.com',
+  studies:[
+    'podologia',
+    'estetica'
+  ],
+  services:[
+    'podologia',
+    'unas'
+  ],
+  slug:'olga'
 })
-
-blogdata.push({
-  title: 'que es vue',
-  slug: 'que-es-vue',
-  content: 'vue es muy buenok',
-  author: "Diego"
-
-})
-
-
-blogdata.push({
-  title: 'que es angular',
-  slug: 'que-es-angular',
-  content: 'angular es el peor framework',
-  author: "Diego"
-
+professionalData.push({
+  name:'Milady',
+  description:'soy una gran profesional',
+  profilePicture:'https;//google.com',
+  studies:[
+    'podologia',
+    'estetica'
+  ],
+  services:[
+    'podologia',
+    'unas'
+  ],
+  slug:'milady'
 })

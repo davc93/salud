@@ -1,7 +1,9 @@
-export interface BlogData {
+export interface Professional {
     
-    title:string,
-    slug:string,
-    content:string,
-    author:string
+    name:string,
+    description:string,
+    profilePicture:string,
+    studies:string[],
+    services:string[],
+    slug:string
 }

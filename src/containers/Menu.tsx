@@ -1,6 +1,7 @@
 
 import React from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom';
+import { Route } from '../models/route';
 function Menu() {
   return (
     <nav>
@@ -38,15 +39,16 @@ function Menu() {
   )
 }
 
-const routes = [];
+
+const routes: Route[] = [];
 
 routes.push({
   to:'/',
   text:'Home'
 })
 routes.push({
-  to:'/blog',
-  text:'Blog'
+  to:'/professionals',
+  text:'Profesionales'
 })
 routes.push({
   to:'/profile',

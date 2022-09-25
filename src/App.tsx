@@ -2,10 +2,10 @@ import { HashRouter,Routes,Route } from 'react-router-dom'
 import React from 'react'; 
 import {NotFound} from './pages/NotFound';
 import {Home} from './pages/Home';
-import {Blog} from './pages/Blog';
+import {Professionals} from './pages/Professionals';
 import {Profile} from './pages/Profile'
 import Menu from './containers/Menu';
-import { BlogPost } from './pages/BlogPost';
+import { ProfessionalPage } from './pages/ProfessionalPage';
 
 function App() {
   return(
@@ -14,8 +14,8 @@ function App() {
         <Menu/>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/blog' element={<Blog/>}>
-            <Route path=':slug' element={<BlogPost/>} />
+          <Route path='/professionals' element={<Professionals/>}>
+            <Route path=':slug' element={<ProfessionalPage/>} />
 
           </Route>
 
