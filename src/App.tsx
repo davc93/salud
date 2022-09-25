@@ -6,7 +6,7 @@ import {Professionals} from './pages/Professionals';
 import {Profile} from './pages/Profile'
 import Menu from './containers/Menu';
 import { ProfessionalPage } from './pages/ProfessionalPage';
-
+import { WorkWithUs } from './pages/WorkWithUs';
 function App() {
   return(
     <React.Fragment>
@@ -18,7 +18,7 @@ function App() {
             <Route path=':slug' element={<ProfessionalPage/>} />
 
           </Route>
-
+          <Route path='/workwithus' element={<WorkWithUs />} />
           <Route path='/profile' element={<Profile/>} />
           <Route path='*' element= {<NotFound/>} />
         </Routes>

@@ -54,5 +54,9 @@ routes.push({
   to:'/profile',
   text:'Profile'
 })
+routes.push({
+  to:'/workwithus',
+  text:'Trabaja con nosotros'
+})
 
 export default Menu
