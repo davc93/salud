@@ -1,4 +1,4 @@
-import { HashRouter,Routes,Route } from 'react-router-dom'
+import {Routes,Route,BrowserRouter } from 'react-router-dom'
 import React from 'react'; 
 import {NotFound} from './pages/NotFound';
 import {Home} from './pages/Home';
@@ -10,7 +10,7 @@ import { WorkWithUs } from './pages/WorkWithUs';
 function App() {
   return(
     <React.Fragment>
-      <HashRouter>
+      <BrowserRouter>
         <Menu/>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
         </Routes>
         <footer>
         </footer>
-      </HashRouter>
+      </BrowserRouter>
     </React.Fragment>
   ) 
 
